@@ -1,0 +1,26 @@
+body{ font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Buttons a{
+    border-radius: 15px;
+    color: white;
+    background-color: blue;
+    padding: 10px;
+}
+.Buttons a:hover{
+    background-color: rgb(6, 6, 90);
+}
