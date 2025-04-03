@@ -1,0 +1,139 @@
+body{ 
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+}
+.Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+.Buttons a{
+    border-radius: 15px;
+    color: white;
+    background-color: blue;
+    padding: 10px;
+    text-decoration: none;
+}
+.Buttons a:hover{
+    background-color: rgb(6, 6, 90);
+}
+footer {
+    background-color: #1b1b1b;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    height: 10vh;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+footer div  {
+    color: white;
+    justify-content: center;
+    align-items: center;
+
+
+}
+footer div p {
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.About-me{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 35vh;
+    width: 100%;
+    padding-top: 50px;
+    justify-content: center;
+}
+.About-me div{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 45%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.About-me div img{
+    height: 100%;
+    width: 100%;
+}
+#right{
+    animation: sliding-right 0.5s ease-in;
+}
+#left{
+    animation: sliding-left 0.5s ease-in;
+}
+.Portfolio{}
+@keyframes sliding-left{
+    from{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+@keyframes sliding-right{
+    from{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+.hidden{
+    display:none;
+
+}
+#contact {
+    border-radius: 15px;
+    color: white;
+    background-color: blue;
+    padding: 10px;
+    text-decoration: none;  
+}
+.popupform{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    background-color: blue;
+    transform: translate(-50%,-50%);
+    justify-content: center;
+    padding: 30px;
+    border-radius: 15px;
+    color: white;
+    width: 30%;
+}
+label{
+    width: 100%;
+}
+input{
+    width: 100%;
+}
+#contactform{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
